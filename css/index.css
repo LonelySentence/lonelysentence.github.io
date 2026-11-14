@@ -4,6 +4,10 @@ body {
   background-blend-mode: lighten;
 }
 
+body > *:not(ul) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 ul {
   list-style-type: none;
@@ -11,9 +15,14 @@ ul {
   padding: 0;
   background-color: #cccccc ;
   display: flex;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   position: -webkit-sticky;
+}
+
+ul li {
+  flex: 0 1 auto;
 }
 
 ul li a {
@@ -31,7 +40,7 @@ ul li a:hover {
 .wjaname {
   font-size:42px;
 }
-/* headers */
+
 h1 {
   color: black;
   text-align: left;
@@ -50,7 +59,6 @@ p {
 }
 
 
-/* footer */
 .lowerfooter {
   list-style-type: none;
   margin: 0;
